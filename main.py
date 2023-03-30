@@ -117,14 +117,14 @@ def run(_instruction: str,
 _instruction = "We car dealership. Generate a marketing email to our customer and give them a 20 off for new year."
 _input = ""
 print('understand domain specific words')
-print("_instruction")
+print(_instruction)
 print(run(_instruction, _input))
 print("")
 # disambiguous
 _instruction = "Explain how 'mac' is used differently in these sentences?"
 _input = "['I love big mac.', 'My mac is broken']"
 print('disambiguous')
-print("_instruction")
+print(_instruction)
 print(run(_instruction, _input))
 print("")
 
@@ -132,14 +132,14 @@ print("")
 _instruction = "Categorize the given sentence into the following categories.: Finance, Romantic, Retail, Food, and None of the above. Assign multiple categories if needed."
 _input = "What if we go to Macy's and grab some lunch at Chick-fil-A?"
 print('Classification')
-print("_instruction")
+print(_instruction)
 print(run(_instruction, _input))
 print("")
 # Extract entities
 _instruction = "Should I target or consider the user who sent the following message as my audience for promoting our new laptop product? Explain why."
 _input = "I just got my salary. I'll just save it for future usage."
 print('Extract entities')
-print("_instruction")
+print(_instruction)
 print(run(_instruction, _input))
 print("")
 _input = 'My macbook has just broken.'
@@ -151,12 +151,12 @@ print("")
 _instruction = "What is the life stage of the user who sent the following messages? Explain why. Life Stages: in college, married, have a baby, new house."
 _input = "We need get the car seats for her."
 print('Extract entities')
-print("_instruction")
+print(_instruction)
 print(run(_instruction, _input))
 print("")
 
 _input = 'I am a little bit nevers about going to Umass this summar.'
-print("_instruction")
+print(_instruction)
 print(run(_instruction, _input))
 print("")
 
