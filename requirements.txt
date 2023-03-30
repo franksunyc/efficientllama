@@ -1,0 +1,10 @@
+-f https://download.pytorch.org/whl/cu117/torch_stable.html
+torch==1.13.1+cu117
+tqdm==4.64.1
+bitsandbytes
+datasets
+loralib
+sentencepiece
+git+https://github.com/zphang/transformers@c3dc391
+git+https://github.com/huggingface/peft.git
+ipykernel
