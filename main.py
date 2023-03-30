@@ -16,7 +16,7 @@ efficient_llama_model_path = "auxiliary_model"
 if not efficient_llama_model_path:
     raise Exception("Please input your auxiliary model")
 
-llama_tokenizer = LLaMATokenizer.from_pretrained(llama_token_model)
+llama_tokenizer = LLaMATokenizer.from_pretrained(llama_model_path)
 
 if device != "cpu":
     # load the weights into gpu
