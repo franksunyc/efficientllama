@@ -5,6 +5,7 @@ from peft import PeftModel
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
 llama_model_path = "/home/data/hdd-1/7B"
+llama_token_model = '/home/data/hdd-1/tokenizer.model'
 if not llama_model_path:
     llama_model_path = "decapoda-research/llama-7b-hf"
 
@@ -14,7 +15,7 @@ efficient_llama_model_path = "auxiliary_model"
 if not efficient_llama_model_path:
     raise Exception("Please input your auxiliary model")
 
-llama_tokenizer = LLaMATokenizer.from_pretrained(llama_model_path)
+llama_tokenizer = LLaMATokenizer.from_pretrained(llama_token_model)
 
 if device != "cpu":
     # load the weights into gpu
