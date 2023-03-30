@@ -3,7 +3,7 @@ from transformers import LLaMATokenizer, LLaMAForCausalLM, GenerationConfig
 from peft import PeftModel
 # setup device
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
-
+print("device",device)
 #llama_model_path = "/home/data/hdd-1/7B"
 #llama_token_model = '/home/data/hdd-1/tokenizer.model'
 llama_model_path = ""
