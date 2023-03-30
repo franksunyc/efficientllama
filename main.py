@@ -182,7 +182,8 @@ _input = """
 AI 模型充当智能 API 调用者。给定 API 规范和何时使用 API 的自然语言描述，模型会主动调用 API 来执行操作。例如，如果用户问“我应该在巴黎住几晚？”，模型可能会选择调用酒店预订插件 API，接收 API 响应，并结合 API 数据生成面向用户的答案及其自然语言能力。
 
 随着时间的推移，我们预计该系统将不断发展以适应更高级的用例。
-"""print('title')
+"""
+print('title')
 print(_instruction)
 print(run(_instruction, _input))
 print("")
